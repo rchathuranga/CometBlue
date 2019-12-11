@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="failStatement">
+    <h1>game over</h1>
+    <h2>space ship destroyed</h2>
+    <a href="">try again</a>
+</div>
+<div id="score">
+    <h2 id="name">Ravindu</h2>
+    <h2 id="scoreVal">000</h2>
+</div>
+<main id="particles-js">
+    <div id="ship">
+        <img src="../assets/img/ship1.png" alt="" width="150px">
+        <div id="blast">
+            <img src="../assets/img/explosion.gif" alt="" width="100%">
+        </div>
+    </div>
+    <div class="laser"></div>
+    <div class="laser"></div>
+    <div class="laser"></div>
+    <div class="laser"></div>
+
+    <div id="enemy">
+        <img src="../assets/img/enemy.png" alt="" width="100%">
+        <img id="eneBlast1" class="eneBlast" src="../assets/img/enemyBlast.gif" alt="" width="100%">
+    </div>
+    <div id="enemy2">
+        <img src="../assets/img/enemy2.png" alt="" width="100%">
+    </div>
+    <div id="enemy3">
+        <img src="../assets/img/enemy3.png" alt="" width="100%">
+        <img id="ene3blast" class="eneBlast1" src="../assets/img/enemyBlast.gif" alt="" width="100%">
+    </div>
+    <div id="enemy4">
+        <img src="../assets/img/enemy3.png" alt="" width="100%">
+        <img id="ene4blast" class="eneBlast1" src="../assets/img/enemyBlast.gif" alt="" width="100%">
+    </div>
+</main>
+<audio id="backgroundMp3" src="../assets/audio/background.mp3"></audio>
+<audio id="shootMp3" src="../assets/audio/shoot1.mp3"></audio>
+<audio id="blastMp3" src="../assets/audio/blast.mp3"></audio>
+<audio id="takeOff" src="../assets/take_off.mp3"></audio>
+
+<script src="../jquary/jquery-3.4.1.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+<script src="js/enemy3.js"></script>
+<script src="js/shoot.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+#homePic {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: url("../assets/img/home.jpg");
+    background-size: cover;
+    background-position: -10px;
+}
+
+section {
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 35vh;
+    /*bottom: 0;*/
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.11);
+}
+
+section > h3 {
+    font-family: "ROG Fonts";
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+#logo {
+    width: min-content;
+    height: min-content;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+svg{
+    animation: fill 1.5s ease forwards 3s;
+}
+
+#logo > svg path{
+}
+
+svg > path:nth-child(2) {
+    stroke-dasharray: 481px;
+    stroke-dashoffset: 481px;
+    animation: lineText 1.5s ease forwards;
+}
+
+svg > path:nth-child(3) {
+    stroke-dasharray: 527px;
+    stroke-dashoffset: 527px;
+    animation: lineText 1.5s ease forwards 0.3s;
+}
+
+svg > path:nth-child(4) {
+    stroke-dasharray: 801px;
+    stroke-dashoffset: 801px;
+    animation: lineText 1.5s ease forwards 0.6s;
+}
+
+svg > path:nth-child(5) {
+    stroke-dasharray: 525px;
+    stroke-dashoffset: 525px;
+    animation: lineText 1.5s ease forwards 0.9s;
+}
+
+svg > path:nth-child(6) {
+    stroke-dasharray: 363px;
+    stroke-dashoffset: 363px;
+    animation: lineText 1.5s ease forwards 1.2s;
+}
+
+svg > path:nth-child(7) {
+    stroke-dasharray: 607px;
+    stroke-dashoffset: 607px;
+    animation: lineText 1.5s ease forwards 1.5s;
+}
+
+svg > path:nth-child(8) {
+    stroke-dasharray: 328px;
+    stroke-dashoffset: 328px;
+    animation: lineText 1.5s ease forwards 1.8s;
+}
+
+svg > path:nth-child(9) {
+    stroke-dasharray: 494px;
+    stroke-dashoffset: 494px;
+    animation: lineText 1.5s ease forwards 2.1s;
+}
+
+svg > path:nth-child(10) {
+    stroke-dasharray: 525px;
+    stroke-dashoffset: 525px;
+    animation: lineText 1.5s ease forwards 2.4s;
+}
+
+@keyframes lineText {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
+
+section{
+    text-align: center;
+}
+
+section>input{
+    position: relative;
+    width: 70%;
+    height: 40px;
+    top: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-bottom: 2px solid #20244a;
+    outline: none;
+    padding: 0 2%;
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+section>button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65%;
+    margin: 0 auto;
+    background: transparent;
+    color: #f0364e;
+    border: 2px solid;
+    width: 70%;
+    height: 100px;
+    outline: none;
+    font-family: Zian;
+    font-size: 50px;
+    animation: btn .9s infinite;
+}
+
+@keyframes btn {
+    0%{}
+    50%{border: none;}
+    0%{}
+}
+
+section>button:hover{
+    animation: none;
+}
